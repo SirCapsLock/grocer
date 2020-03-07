@@ -1,7 +1,7 @@
-<div class="card shadow mx-2 mt-4" ...attributes>
+<div class="card shadow-sm mx-2 mt-4" ...attributes>
   <div class="card-body">
-    <h5 class="card-title">{{@title}}</h5>
-    <p class="card-text">{{@createdAt}}</p>
+    <h5 class="card-title">{{@list.name}}</h5>
+    <p class="card-text">{{@list.createdAt}}</p>
     {{yield}}
   </div>
 </div>

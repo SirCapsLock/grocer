@@ -1,3 +1,3 @@
-<List::Card @title="February 2 Shopping List" @createdAt="now" />
-<List::Card @title="February 3 Shopping List" @createdAt="2 weeks ago" />
-<List::Card @title="February 4 Shopping List" @createdAt="one month ago" />
+{{#each @model as |list|}}
+  <List::Card @list={{list}}/>
+{{/each}}
